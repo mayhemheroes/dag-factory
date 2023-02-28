@@ -1,0 +1,9 @@
+project: dag-factory
+target: fuzz-dag
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_dag.py
+    libfuzzer: true
+    timeout: 12
